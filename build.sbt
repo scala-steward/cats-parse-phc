@@ -34,6 +34,7 @@ lazy val root = tlCrossRootProject
 
 lazy val core = crossProject(JVMPlatform, JSPlatform, NativePlatform)
   .in(file("modules/core"))
+  .settings(headerSettings)
   .settings(
     name := "cats-parse-phc",
     libraryDependencies ++= Seq(
@@ -45,3 +46,12 @@ lazy val core = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       "org.scalameta" %%% "munit-scalacheck" % munitScalaCheckVersion % Test
     )
   )
+
+lazy val headerSettings = Seq(
+  headerLicense := Some(
+    HeaderLicense.Custom(
+      "Copyright 2026 Magine Pro\n" +
+        HeaderLicense.ALv2("2026", "Viktor Rudebeck", HeaderLicenseStyle.Detailed).text
+    )
+  )
+)

@@ -10,7 +10,7 @@ You can add the following line to `build.sbt` to use the library.
 libraryDependencies += "com.magine" %% "cats-parse-phc" % catsParsePhcVersion
 ```
 
-Make sure to replace `catsParsePhcVersion` with a [release version](https://github.com/maginepro/cats-parse-phc/releases).<br>
+Make sure to replace `catsParsePhcVersion` with a [release version](https://github.com/vlovgr/cats-parse-phc/releases).<br>
 Replace `%%` with `%%%` if you are using [Scala.js](https://www.scala-js.org) or [Scala Native](https://scala-native.org).
 
 ## Parsing
@@ -84,3 +84,11 @@ import com.magine.cats.parse.phc.syntax._
 bcrypt"$$2a$$12$$FoNsj8vKI9vE1/ijbIoe6evjenGlzFMTv3maAc2wtCc8Jhf.GmRkW"
 // Bcrypt = Bcrypt(version = BcryptVersion(2a), cost = BcryptCost(12), salt = BcryptSalt(FoNsj8vKI9vE1/ijbIoe6e), hash = BcryptHash(vjenGlzFMTv3maAc2wtCc8Jhf.GmRkW))
 ```
+
+## License
+
+Copyright 2026 Magine Pro<br>
+Copyright 2026 Viktor Rudebeck
+
+Licensed under the [Apache License, Version 2.0](license.txt).<br>
+Created by [Viktor Rudebeck](https://github.com/vlovgr) at [Magine Pro](https://github.com/maginepro) and independently maintained since 2026.
