@@ -1,4 +1,4 @@
-# :page_facing_up: cats-parse-phc
+# cats-parse-phc <img src="docs/img/logo.svg" align="right" height="130" alt="" />
 
 Support for parsing and generating password hashes in the [PHC string format](https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md) using [cats-parse](https://github.com/typelevel/cats-parse).
 
